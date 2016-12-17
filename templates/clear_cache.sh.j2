@@ -1,0 +1,6 @@
+#!/bin/sh
+#{{ ansible_managed }}
+cd {{ supla_path  }}/www
+php app/console cache:clear --env=prod
+php app/console cache:clear --env=dev
+chown -R www-data:www-data *
