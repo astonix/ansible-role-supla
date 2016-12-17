@@ -1,4 +1,4 @@
-# ansible-role-supla-server
+# ansible-role-supla
 
 Ansible role for project Supla https://github.com/SUPLA
 
