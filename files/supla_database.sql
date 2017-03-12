@@ -206,6 +206,20 @@ CREATE TABLE IF NOT EXISTS `supla_temperature_log` (
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `supla_temphumidity_log`
+--
+
+CREATE TABLE IF NOT EXISTS `supla_temphumidity_log` (
+`id` int(11) NOT NULL,
+  `channel_id` int(11) NOT NULL,
+  `date` datetime NOT NULL,
+  `temperature` decimal(8,4) NOT NULL,
+  `humidity` decimal(8,4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `supla_user`
 --
 
