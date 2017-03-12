@@ -1,12 +1,12 @@
 ---
 - name: restart apache2
-  service: name=apache2 state=restarted 
+  service: name=apache2 state=restarted enabled=yes 
 
 - name: restart supla-server
-  service: name=supla-server state=restarted 
+  service: name=supla-server state=restarted enabled=yes
 
 - name: restart supla-dev
-  service: name=supla-dev state=restarted 
+  service: name=supla-dev state=restarted enabled=yes
 
 - name: supla-cloud cache reload
   command: ./clear_cache.sh chdir={{ supla_path }}/www
