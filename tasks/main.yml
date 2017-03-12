@@ -50,6 +50,7 @@
     - libmysqlclient-dev
     - python-mysqldb 
     - libssl-dev 
+    - zlib1g
   when: ansible_distribution == 'Debian'
   tags: common
 
@@ -70,6 +71,7 @@
     - libmysqlclient-dev
     - python-mysqldb 
     - libssl-dev
+    - zlib1g
   when: ansible_distribution == 'Ubuntu' 
   tags: common
 
